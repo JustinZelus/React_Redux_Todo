@@ -1,17 +1,18 @@
+import React from "react";
+import { render } from "react-dom";
+import App from "./components/App";
 import { createStore } from "redux";
+import { Provider } from "react-redux";
+import rootReducer from "./reducers";
 
-const reducer = (state, action) => {
-  if (action.type === "INC") {
-    return state + action.payload;
-  }
-  return state;
-};
+const store = createStore(
+  rootReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
-const store = createStore(reducer, 0);
-
-store.subscribe(() => {
-  console.log("store changed:" + store.getState());
-});
-
-store.dispatch({ type: "INC", payload: 1 });
-store.dispatch({ type: "INC", payload: 2 });
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("app")
+);

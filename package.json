@@ -1,22 +1,23 @@
 {
   "name": "todo",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Todo Applicaton",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open"
   },
-  "author": "",
+  "author": "JZ",
   "license": "ISC",
   "dependencies": {
     "clean-webpack-plugin": "^1.0.0",
     "copy-webpack-plugin": "^4.6.0",
     "html-webpack-plugin": "^3.2.0",
+    "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "redux": "^4.0.1",
     "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.7"
   },
   "devDependencies": {
