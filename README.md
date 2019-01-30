@@ -1,5 +1,8 @@
 # React_Redux_Todo
 
+&nbsp;
+<img src="https://github.com/JustinZelus/React_Redux_Todo/blob/master/draw_boxes_todo.PNG"/>
+
 **Todo Application**
 
 - combine react &amp; redux
